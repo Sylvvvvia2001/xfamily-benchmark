@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f8f4">
+  <meta name="description" content="X-Family is a benchmark for everyday routines in a smart home. Explore a furnished 3D home and follow household activities alongside device events.">
+  <meta property="og:title" content="X-Family — A benchmark for everyday life at home">
+  <meta property="og:description" content="Follow daily routines, human motion, and device events in a furnished 3D home.">
+  <meta property="og:image" content="https://sylvvvvia2001.github.io/xfamily-benchmark/images/living-room.webp">
+  <title>X-Family · A benchmark for everyday life at home</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preload" href="./fonts/gloock.ttf" as="font" type="font/ttf" crossorigin>
+  <script src="./rooms.js" defer></script>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <figure class="plan" aria-label="House floor plan. Select a marked room to see its interior.">
+      <div class="drawing">
+        <img class="house" src="images/house-plan.webp" width="1580" height="1058" fetchpriority="high" alt="Blender overhead view of the furnished home, with the kitchen, living area and balcony across the top and the bedroom and study below.">
+        <a class="pin kitchen" href="#kitchen" aria-label="Explore the kitchen">Kitchen</a>
+        <a class="pin living" href="#living-room" aria-label="Explore the living room">Living room</a>
+        <a class="pin study" href="#study" aria-label="Explore the study">Study</a>
+      </div>
+    </figure>
+    <div class="title-block wrap">
+      <h1>X-Family</h1>
+      <p>A benchmark for everyday routines in a smart home</p>
+      <div class="links">
+        <a class="button primary" href="https://sylvvvvia2001.github.io/xfamily-house-demo/">Explore the 3D home</a>
+        <a class="button plain" href="https://github.com/Sylvvvvia2001/xfamily-house-demo">GitHub</a>
+      </div>
+    </div>
+  </header>
+  <section class="overview wrap" aria-labelledby="overview-title">
+    <h2 id="overview-title">Overview</h2>
+    <p>Making coffee leaves a trace in two places. In the kitchen, a resident sets down a cup. On the device timeline, the coffee machine switches on. X-Family brings these views together so you can follow a routine through the home and see its events unfold in time.</p>
+  </section>
+  <section class="facts" aria-labelledby="scale-title">
+    <div class="wrap">
+      <h2 id="scale-title">X-Family at a glance</h2>
+      <dl>
+        <div><dt>Days per resident</dt><dd>70</dd></div>
+        <div><dt>Resident profiles</dt><dd>6</dd></div>
+        <div><dt>Motion branches</dt><dd>241</dd></div>
+        <div><dt>House asset groups</dt><dd>287</dd></div>
+      </dl>
+      <p>Each profile spans 1,680 hours, for a combined 10,080 participant-hours.</p>
+    </div>
+  </section>
+  <section class="rooms wrap" aria-labelledby="rooms-title">
+    <div class="section-head">
+      <h2 id="rooms-title">Inside the home</h2>
+      <nav class="room-links" aria-label="Room interiors">
+        <a href="#living-room">Living room</a><a href="#kitchen">Kitchen</a><a href="#study">Study</a>
+      </nav>
+    </div>
+    <figure class="interior" id="living-room">
+      <img src="images/living-room.webp" alt="Two sofas surround a coffee table, with the dining table and kitchen beyond." width="1440" height="900" loading="lazy">
+      <figcaption><strong>Living room</strong><span>The coffee table holds the remote within reach of the sofas.</span></figcaption>
+    </figure>
+    <figure class="interior" id="kitchen">
+      <img src="images/kitchen.webp" alt="The kitchen worktop wraps around the sink, with small appliances along the wall." width="1280" height="900" loading="lazy">
+      <figcaption><strong>Kitchen</strong><span>The sink, countertop and appliances share a workspace for preparing a meal.</span></figcaption>
+    </figure>
+    <figure class="interior" id="study">
+      <img src="images/study.webp" alt="A desk and keyboard face a wall of wooden bookcases in the study." width="1440" height="1080" loading="lazy">
+      <figcaption><strong>Study</strong><span>A desk, keyboard and bookshelves bring work and reading into the same room.</span></figcaption>
+    </figure>
+  </section>
+  <section class="example wrap" aria-labelledby="example-title">
+    <h2 id="example-title">An action in context</h2>
+    <figure>
+      <div class="frames">
+        <img src="images/remote-approach.webp" width="580" height="590" loading="lazy" alt="The resident stands beside the coffee table with the remote lying flat on it.">
+        <img src="images/remote-reach.webp" width="580" height="590" loading="lazy" alt="She bends down and reaches for the remote with her right hand.">
+        <img src="images/remote-lift.webp" width="580" height="590" loading="lazy" alt="She stands upright holding the remote.">
+      </div>
+      <figcaption>Picking up the TV remote from the coffee table, shown at three moments in the same motion.</figcaption>
+    </figure>
+  </section>
+</main>
+<footer class="wrap"><span>X-Family</span><a href="https://sylvvvvia2001.github.io/xfamily-house-demo/">Interactive 3D home</a></footer>
+</body>
+</html>
