@@ -46,8 +46,34 @@ footer span{font:500 1.25rem var(--sans);color:var(--ink)}
  .rooms{padding:2.6rem 0 2rem}.section-head{display:block}.room-links{margin-top:1.05rem}
  .interior img{aspect-ratio:1.45}.interior figcaption{display:block}.interior figcaption strong{display:block;margin-bottom:.4rem}
 }
-.example{padding:0 0 4rem}.example h2{margin-bottom:1.45rem}
-.frames{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
-.frames img{width:100%;height:auto;display:block}
-.example figcaption{padding-top:.8rem;color:var(--muted);font-size:.98rem}
-@media(max-width:680px){.example{padding-bottom:2.5rem}.frames{gap:.24rem}}
+.motions {
+  padding-bottom: clamp(3.25rem, 6vw, 5.5rem);
+}
+.motions h2 {
+  margin-bottom: clamp(1.25rem, 2.7vw, 2rem);
+  font-size: clamp(1.55rem, 3vw, 2.4rem);
+  letter-spacing: -.045em;
+}
+.motion-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.6rem, 4vw, 3rem) clamp(.75rem, 2.5vw, 1.85rem);
+}
+.motion-gallery a {
+  display: block;
+  cursor: zoom-in;
+  border-radius: .25rem;
+}
+.motion-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+.motion-gallery figcaption {
+  padding-top: clamp(.5rem, 1.2vw, .8rem);
+  font-size: clamp(.875rem, 1.45vw, 1.075rem);
+  line-height: 1.4;
+  letter-spacing: -.025em;
+  text-wrap: pretty;
+}
